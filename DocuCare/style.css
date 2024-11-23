@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #ecf6f8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    line-height: 40px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #272346;
+    text-align: center;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    line-height: 25px;
+    opacity: 0.6;
+    text-align: center;
+}
+
+#login-btn:hover,
+#reg-btn:hover{
+    color: #ffffff;
+    background-color: #036983;
+    transition: 0.5s ease;
+}
+
+#login-btn,
+#reg-btn{
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    background: #0292b7;
+    border: none;
+    padding: 14px 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+input, select {
+    outline: none;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #272346;
+    padding: 14px 20px;
+    width: 100%;
+    border: 1px solid #cac9c9;
+    background: #f7fafc;
+    transition: 0.3s ease;
+    border-radius: 35px;
+}
+
+input:focus, select:focus {
+    background: transparent;
+    border: 1px solid #0292b7;
+}
+
+p.account a {
+    color: #0292b7;
+}
+
+p.account a:hover {
+    text-decoration: underline;
+}
+
+/* style Log in form */
+.login-form {
+    position: relative;
+    min-height: 100vh;
+    z-index: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.login-form h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.login-form .main {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.login-form .content {
+    flex-basis: 50%;
+    padding: 3em 3em;
+}
+
+.login-form .form-img {
+    flex-basis: 50%;
+    background: #abd7df;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.login-form .form-img img {
+    width: 400px;
+    height: 350px;
+    max-height: 100%;
+
+}
+
+.login-form form {
+    margin: 30px 0;
+}
+
+/* style to register form */
+.register-form {
+    position: relative;
+    min-height: 100vh;
+    z-index: 0;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.register-form h2 {
+    line-height: 40px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #272346;
+    text-align: center;
+}
+
+.register-form .main2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.register-form .content2 {
+    flex-basis: 60%;
+    padding: 3em;
+}
+
+.register-form .form-img {
+    flex-basis: 40%; 
+    background: #abd7df;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.register-form .form-img img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover; 
+   
+}
+
+.register-form form {
+    margin: 30px 0;
+}
+
+.input-pair {
+    display: flex;
+    gap: 10px;
+}
+
+.input-pair input, .input-pair select {
+    flex: 1;
+    min-width: 0; 
+}
+
+
+/* style for captcha*/
+.captcha {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width:50%
+  }
+  .captcha-refresh {
+    cursor: pointer;
+    background-color: #0292b7;
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 10px;
+    text-align: center;
+    width:50%;
+  }
+  .captcha-refresh:hover {
+    color: white;
+    background-color:#036983;
+  }
+
+
+  .captcha-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .captcha {
+    margin: 5px;
+  }
+  
+  .captcha-refresh span {
+    cursor: pointer;
+  }
+  
+  
+
+@media (max-width: 736px) {
+    .login-form .main {
+        flex-direction: column;
+    }
+
+    .register-form .main2 {
+        flex-direction: column;
+    }
+
+    .login-form .form-img {
+        border-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        order: 2;
+    }
+
+    .login-form .content {
+        order: 1;
+        border-radius: 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .register-form .form-img {
+        border-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        order: 2;
+    }
+
+    .register-form .content2 {
+        order: 1;
+        border-radius: 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .input-pair {
+        flex-direction: column; 
+        gap: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    .login-form .main {
+        flex-direction: column;
+    }
+
+    .login-form .content {
+        padding: 1em;
+    }
+
+    .login-form .form-img {
+        flex-basis: 100%;
+        height: auto;
+    }
+
+    .login-form .form-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .register-form .main2 {
+        flex-direction: column;
+    }
+
+    .register-form .content2 {
+        padding: 1em;
+    }
+
+    .register-form .form-img {
+        flex-basis: 100%;
+        height: auto;
+    }
+
+    .register-form .form-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .input-pair {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .input-pair input {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    #login-btn,
+    #reg-btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .captcha {
+        font-size: 14px;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .captcha-refresh {
+        font-size: 14px;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .captcha-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .captcha-container label {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+}

@@ -1,0 +1,51 @@
+addPatient.php addPatient.php(DONE)
+
+CarePlansList.php (SEARCH BAR NOT TESTED YET, BUTTON IS NOT CORRECT)
+
+ChartingList.php (SEARCH BAR NOT TESTED YET)
+
+counter.php (NOT POSSIBLE UNLESS TAPOS NA LAHAT)
+
+Dashboard.php (COUNTER.PHP IS NOT DONE)
+
+index.php indexScript.php (DONE. REGISTRATION WILL BE MOVED TO ADMIN)
+
+infoCarePlans.html (NO PROGRESS YET)
+
+infoProgressNote.html (NO PROGRESS YET)
+
+infoRoomManage.html (NO PROGRESS YET)
+
+intakeOutput.php (MISSING READ, UPDATE, DELETE)
+
+ivRecord.php ivRecordScript.php (MISSING READ, UPDATE, DELETE)
+
+Kardex.php kardexScript.php (MISSING CREATE, UPDATE, DELETE. READ IS SEMI WORKING ONLY FOR PATIENT INFO AND THE FORM ROWS)
+
+KardexQueries.php (DONE)
+
+medRecord.html (NO PROGRESS YET)
+
+mycon.php (DONE)
+
+nurseNotes.html (NO PROGRESS YET)
+
+NurseSchedList.php (SEARCH BAR NOT TESTED YET, MISSING TABLE)
+
+PatientInfo.php (DONE)
+
+Profile.php (MISSING UPDATE)
+
+ProgressNotesList.php (SEARCH BAR NOT TESTED YET, BUTTON IS NOT CORRECT MISSING TABLE)
+
+register.php RegisterScript.php (DONE, WILL BE MOVED TO ADMIN)
+
+RoomManagementList.php (SEARCH BAR NOT TESTED YET, BUTTON IS NOT CORRECT MISSING TABLE)
+
+roomManagement.html (NO PROGRESS YET)
+
+standingOrder.html (NO PROGRESS YET)
+
+tprChart.php (NO PROGRESS YET)
+
+vitalsign.php vitalsignScript.php (MISSING READ, UPDATE, DELETE)
